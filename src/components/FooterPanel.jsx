@@ -6,7 +6,7 @@ export default function FooterPanel() {
   return (
     <>
       <Box sx={{ mt: 20 }}>
-        <Typography variant="overline" component="h2" id="Contact">
+        <Typography variant="overline" component="h2" id="contact">
           Contact
         </Typography>
       </Box>

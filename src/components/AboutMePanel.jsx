@@ -5,12 +5,12 @@ export default function AboutMePanel() {
   return (
     <>
         <Box sx={{ mt: 15, mb: 3}}>
-          <Typography variant="h1" id="AboutMe">Hi, I'm Chloe</Typography>
+          <Typography variant="h1" id="about-me">Hi, I'm Chloe</Typography>
           </Box>
           <Typography variant="h2" component="p">
             I'm a <em>fullstack software developer</em> looking for new opportunities
           </Typography>
-          <Box sx={{ mt: 5, textAlign: "justify" }}>
+          <Box sx={{ mt: 5, textAlign: "justify" }} >
             <Typography variant="p">
               My background is in digital product management and digital strategy, and I'm transitioning into a software development career
               having recently graduated from the Northcoders Fullstack Bootcamp. I'm passionate about learning new technologies and

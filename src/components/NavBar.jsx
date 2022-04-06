@@ -2,6 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem, useScrollTrigger, Slide } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { HashLink } from "react-router-hash-link";
 
 export default function NavBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -30,7 +31,7 @@ export default function NavBar() {
 
   return (
     <HideOnScroll>
-      <AppBar sx={{boxShadow: 0}}>
+      <AppBar sx={{ boxShadow: 0 }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Box sx={{ justifyContent: "end", flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -57,27 +58,35 @@ export default function NavBar() {
                 onClose={handleCloseNavMenu}
                 sx={{ display: { xs: "block", md: "none" } }}
               >
-                <MenuItem key="AboutMe" onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">About me</Typography>
-                </MenuItem>
-                <MenuItem key="RecentProjects" onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">Recent projects</Typography>
-                </MenuItem>
+                <HashLink smooth to={"#about-me"}>
+                  <MenuItem key="AboutMe" onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">About me</Typography>
+                  </MenuItem>
+                </HashLink>
+                <HashLink smooth to={"#projects"}>
+                  <MenuItem key="RecentProjects" onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">Recent projects</Typography>
+                  </MenuItem>
+                </HashLink>
                 <MenuItem key="Contact" onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">Contact</Typography>
                 </MenuItem>
               </Menu>
             </Box>
             <Box sx={{ justifyContent: "end", flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-              <Button key="AboutMe" onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+            <HashLink smooth to={"#about-me"}>
+              <Button key="AboutMe" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
                 About Me
               </Button>
-              <Button key="RecentProjects" onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+              </HashLink>
+              <HashLink smooth to={"#projects"}>
+              <Button key="RecentProjects" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
                 Recent Projects
-              </Button>
-              <Button key="Contact" onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }}>
+              </Button></HashLink>
+              <HashLink smooth to={"#contact"}>
+              <Button key="Contact" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
                 Contact
-              </Button>
+              </Button></HashLink>
             </Box>
           </Toolbar>
         </Container>

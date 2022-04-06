@@ -18,11 +18,11 @@ export default function StarsBackground() {
                 animation: {
                     enable: true,
                     minimumValue: 0,
-                    speed: 1,
+                    speed: 2,
                     sync: false,
                 },
                 random: true,
-                value: 1,
+                value: 0.5,
             },
             shape: {
                 type: "circle",

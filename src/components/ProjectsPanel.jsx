@@ -9,7 +9,7 @@ const projects = [
   {
     name: "'Animon' mobile app",
     description:
-      "A gamified education app for children, loosely inspired by Pokemon Go. It includes a list of wild animals for children to find while out and about. They take photos of animals they find using their device's camera in-app, and image recognition technology confirms if it's a target animal. A map feature enables users to explore places where they've previously found animals, and users can earn badges based on how many animals they've found. I worked on this project with 5 other students on the Northcoders bootcamp.",
+      "A gamified education app for children, loosely inspired by Pokemon Go. It includes a list of wild animals for children to find while out and about. They can take photos of animals they find using their device's camera in-app, and image recognition technology confirms if it's a target animal. A map feature enables users to explore places they've previously found animals, and users can earn badges based on how many animals they've found. I worked on this project with 5 other students on the Northcoders bootcamp.",
     img: "animon",
     technologies: ["React Native (Expo)", "Firestore", "Firebase"],
     gitHubUrl: "https://github.com/Chl0e-g/Northcoders-final-project",
@@ -36,9 +36,9 @@ const projects = [
     name: "Portfolio site",
     description:
       "This website, which I designed and built to display my coding projects. I built it with React and the MUI UI framework, as well as custom CSS. The site is fully responsive and accessible, and is hosted on Netlify.",
-    mobileImg: "",
-    desktopImg: "",
+    img: "portfolio",
     technologies: ["React", "MUI", "CSS3", "Netlify"],
+    liveUrl: "https://chloe-glassonbury.netlify.app",
     gitHubUrl: "https://github.com/Chl0e-g/portfolio-website-2",
   },
 ];
@@ -47,7 +47,7 @@ export default function ProjectsPanel() {
   return (
     <>
       <Divider sx={{ mt: 10, mb: 10 }} />
-      <Typography variant="overline" component="h2" id="Projects">
+      <Typography variant="overline" component="h2" id="projects">
         Recent Projects
       </Typography>
       <Grid container >

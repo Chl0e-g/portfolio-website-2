@@ -8,6 +8,8 @@ import FooterPanel from "./components/FooterPanel";
 import NavBar from "./components/NavBar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import StarsBackground from "./components/StarsBackground";
+import { Switch, Route, Routes, Redirect } from "react-router-dom";
+import Home from "./components/Home";
 
 const theme = createTheme({
   palette: {
@@ -69,16 +71,9 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <StarsBackground />
-        <Container maxWidth="lg">
-          <NavBar />
-
-          <AboutMePanel />
-          <TechnologiesPanel />
-          <ProjectsPanel />
-          <FooterPanel />
-        </Container>
+        <Routes>
+          <Route path="" element={<Home />} />
+        </Routes>
       </ThemeProvider>
     </>
   );
