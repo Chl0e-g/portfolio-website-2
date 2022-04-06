@@ -47,7 +47,7 @@ export default function ProjectsPanel() {
   return (
     <>
       <Divider sx={{ mt: 10, mb: 10 }} />
-      <Typography variant="overline" component="h2">
+      <Typography variant="overline" component="h2" id="Projects">
         Recent Projects
       </Typography>
       <Grid container >

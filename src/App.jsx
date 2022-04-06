@@ -7,6 +7,7 @@ import ProjectsPanel from "./components/ProjectsPanel";
 import FooterPanel from "./components/FooterPanel";
 import NavBar from "./components/NavBar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import StarsBackground from "./components/StarsBackground";
 
 const theme = createTheme({
   palette: {
@@ -69,6 +70,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <CssBaseline />
+        <StarsBackground />
         <Container maxWidth="lg">
           <NavBar />
 

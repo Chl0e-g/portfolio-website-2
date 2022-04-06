@@ -18,3 +18,9 @@ li::before {
 img {
   object-fit: contain;
 }
+
+#tsparticles {
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+}

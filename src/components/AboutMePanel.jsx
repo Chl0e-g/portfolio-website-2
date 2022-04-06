@@ -1,12 +1,13 @@
 import { Typography, Box, Container } from "@mui/material";
+import StarsBackground from "./StarsBackground"
 
 export default function AboutMePanel() {
   return (
     <>
         <Box sx={{ mt: 15, mb: 3}}>
-          <Typography variant="h1" className="animate__animated animate__fadeInDown">Hi, I'm Chloe</Typography>
+          <Typography variant="h1" id="AboutMe">Hi, I'm Chloe</Typography>
           </Box>
-          <Typography variant="h2" component="p" className="animate__animated animate__fadeInDown">
+          <Typography variant="h2" component="p">
             I'm a <em>fullstack software developer</em> looking for new opportunities
           </Typography>
           <Box sx={{ mt: 5, textAlign: "justify" }}>
