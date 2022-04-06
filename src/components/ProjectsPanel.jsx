@@ -38,7 +38,7 @@ const projects = [
       "This website, which I designed and built to display my coding projects. I built it with React and the MUI UI framework, as well as custom CSS. The site is fully responsive and accessible, and is hosted on Netlify.",
     img: "portfolio",
     technologies: ["React", "MUI", "CSS3", "Netlify"],
-    liveUrl: "https://chloe-glassonbury.netlify.app",
+    liveUrl: "https://chloe-glassonbury-portfolio.netlify.app",
     gitHubUrl: "https://github.com/Chl0e-g/portfolio-website-2",
   },
 ];
