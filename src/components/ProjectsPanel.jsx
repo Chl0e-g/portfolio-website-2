@@ -1,9 +1,5 @@
-import { Typography, Grid, Divider, Paper, Box, ImageList, ImageListItem } from "@mui/material";
+import { Typography, Grid, Divider, Paper } from "@mui/material";
 import Project from "./Project";
-// import animonMob from "../assets/animonMob.png";
-// import apiLaptop from "../assets/apiLaptop.png";
-// import newsviewsLaptop from "../assets/newsviewsLaptop.png";
-// import newsviewsMob from "../assets/newsviewsMob.png";
 
 const projects = [
   {
@@ -50,13 +46,13 @@ export default function ProjectsPanel() {
       <Typography variant="overline" component="h2" id="projects">
         Recent Projects
       </Typography>
-      <Grid container >
+      <Grid container>
         {projects.map((project, i) => {
           if (i % 2 === 0) {
             return (
               <>
-                <Paper sx={{ display: "flex", padding: 5, mb: 5, mt: 3, flexWrap: "wrap", alignItems: 'center' }}>
-                  <Grid item sm={12} md={5} sx={{paddingLeft: 2, paddingRight: 2}}>
+                <Paper sx={{ display: "flex", padding: 5, mb: 5, mt: 3, flexWrap: "wrap", alignItems: "center" }}>
+                  <Grid item sm={12} md={5} sx={{ paddingLeft: 2, paddingRight: 2 }}>
                     <img src={`../assets/${project.img}.png`} alt={`mobile screenshot of ${project.name}`} style={{ maxWidth: "100%" }} />
                   </Grid>
                   <Grid item sm={12} md={7}>
@@ -69,12 +65,12 @@ export default function ProjectsPanel() {
           } else {
             return (
               <>
-                <Paper sx={{ display: "flex", padding: 4, mb: 3, flexWrap: "wrap-reverse", alignItems: 'center' }}>
+                <Paper sx={{ display: "flex", padding: 4, mb: 3, flexWrap: "wrap-reverse", alignItems: "center" }}>
                   <Grid item sm={12} md={7}>
                     <Typography variant="h3">{project.name}</Typography>
                     <Project project={project} />
                   </Grid>
-                  <Grid item sm={12} md={5} sx={{paddingLeft: 2, paddingRight: 2}}>
+                  <Grid item sm={12} md={5} sx={{ paddingLeft: 2, paddingRight: 2 }}>
                     <img src={`../assets/${project.img}.png`} alt={`mobile screenshot of ${project.name}`} style={{ maxWidth: "100%" }} />
                   </Grid>
                 </Paper>

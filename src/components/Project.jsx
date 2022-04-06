@@ -11,17 +11,17 @@ export default function Project({ project }) {
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {project.technologies.map((technology) => {
           return (
-            <Typography variant="overline" component="p" sx={{ mr: 2 }} >
+            <Typography variant="overline" component="p" sx={{ mr: 2 }}>
               {technology}
             </Typography>
           );
         })}
       </Box>
-      <IconButton aria-label="view GitHub repository" size="large" href={project.gitHubUrl} color="primary">
+      <IconButton aria-label="view GitHub repository" size="large" href={project.gitHubUrl}>
         <GitHubIcon fontSize="inherit" />
       </IconButton>
       {project.liveUrl && (
-        <IconButton aria-label="view live project" size="large" href={project.liveUrl} color="primary">
+        <IconButton aria-label="view live project" size="large" href={project.liveUrl}>
           <LaunchIcon fontSize="inherit" />
         </IconButton>
       )}

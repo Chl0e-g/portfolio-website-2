@@ -1,5 +1,4 @@
 import * as React from "react";
-import PropTypes from "prop-types";
 import { AppBar, Box, Toolbar, IconButton, Typography, Menu, Container, Button, MenuItem, useScrollTrigger, Slide } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { HashLink } from "react-router-hash-link";
@@ -74,19 +73,21 @@ export default function NavBar() {
               </Menu>
             </Box>
             <Box sx={{ justifyContent: "end", flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            <HashLink smooth to={"#about-me"}>
-              <Button key="AboutMe" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
-                About Me
-              </Button>
+              <HashLink smooth to={"#about-me"}>
+                <Button key="AboutMe" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
+                  About Me
+                </Button>
               </HashLink>
               <HashLink smooth to={"#projects"}>
-              <Button key="RecentProjects" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
-                Recent Projects
-              </Button></HashLink>
+                <Button key="RecentProjects" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
+                  Recent Projects
+                </Button>
+              </HashLink>
               <HashLink smooth to={"#contact"}>
-              <Button key="Contact" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
-                Contact
-              </Button></HashLink>
+                <Button key="Contact" onClick={handleCloseNavMenu} sx={{ my: 2, color: "primary", display: "block" }}>
+                  Contact
+                </Button>
+              </HashLink>
             </Box>
           </Toolbar>
         </Container>

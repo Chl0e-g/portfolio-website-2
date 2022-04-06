@@ -1,14 +1,6 @@
 import "./App.css";
-import "animate.css";
-import { CssBaseline, Container, Box } from "@mui/material";
-import AboutMePanel from "./components/AboutMePanel";
-import TechnologiesPanel from "./components/TechnologiesPanel";
-import ProjectsPanel from "./components/ProjectsPanel";
-import FooterPanel from "./components/FooterPanel";
-import NavBar from "./components/NavBar";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import StarsBackground from "./components/StarsBackground";
-import { Switch, Route, Routes, Redirect } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
 
 const theme = createTheme({
