@@ -50,8 +50,7 @@ export default function ProjectsPanel() {
         {projects.map((project, i) => {
           if (i % 2 === 0) {
             return (
-              <>
-                <Paper sx={{ display: "flex", padding: 5, mb: 5, mt: 3, flexWrap: "wrap", alignItems: "center" }}>
+                <Paper key={project.name} sx={{ display: "flex", padding: 5, mb: 5, mt: 3, flexWrap: "wrap", alignItems: "center" }}>
                   <Grid item sm={12} md={5} sx={{ paddingLeft: 2, paddingRight: 2 }}>
                     <img src={`../assets/${project.img}.png`} alt={`mobile screenshot of ${project.name}`} style={{ maxWidth: "100%" }} />
                   </Grid>
@@ -60,12 +59,10 @@ export default function ProjectsPanel() {
                     <Project project={project} />
                   </Grid>
                 </Paper>
-              </>
             );
           } else {
             return (
-              <>
-                <Paper sx={{ display: "flex", padding: 4, mb: 3, flexWrap: "wrap-reverse", alignItems: "center" }}>
+                <Paper key={project.name} sx={{ display: "flex", padding: 4, mb: 3, flexWrap: "wrap-reverse", alignItems: "center" }}>
                   <Grid item sm={12} md={7}>
                     <Typography variant="h3">{project.name}</Typography>
                     <Project project={project} />
@@ -74,7 +71,6 @@ export default function ProjectsPanel() {
                     <img src={`../assets/${project.img}.png`} alt={`mobile screenshot of ${project.name}`} style={{ maxWidth: "100%" }} />
                   </Grid>
                 </Paper>
-              </>
             );
           }
         })}
