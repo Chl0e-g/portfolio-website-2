@@ -26,7 +26,7 @@ const theme = createTheme({
       disabled: "rgba(255,255,255,0.5)",
       hint: "rgba(255,255,255,0.5)",
     },
-    divider: "#aa42ff",
+    divider: "#B357FF",
   },
   typography: {
     fontFamily: "Outfit",
@@ -44,7 +44,7 @@ const theme = createTheme({
     },
     overline: {
       fontSize: "1.1rem",
-      color: "#aa42ff",
+      color: "#B357FF",
     },
   },
   components: {
